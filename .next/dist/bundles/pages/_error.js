@@ -67,20 +67,20 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 30);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 0:
+/***/ 30:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("C:\\Users\\ekkaw\\Desktop\\Project\\next-movie\\movie-core\\node_modules\\next\\dist\\pages\\_error.js");
+module.exports = __webpack_require__(31);
 
 
 /***/ }),
 
-/***/ "C:\\Users\\ekkaw\\Desktop\\Project\\next-movie\\movie-core\\node_modules\\next\\dist\\pages\\_error.js":
+/***/ 31:
 /***/ (function(module, exports) {
 
 module.exports = require("C:\\Users\\ekkaw\\Desktop\\Project\\next-movie\\movie-core\\node_modules\\next\\dist\\pages\\_error.js");
@@ -88,4 +88,3 @@ module.exports = require("C:\\Users\\ekkaw\\Desktop\\Project\\next-movie\\movie-
 /***/ })
 
 /******/ });
-//# sourceMappingURL=_error.js.map

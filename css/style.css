@@ -17,8 +17,14 @@
 }
 
 .movie-imdb b {
-    background: url(http://files.softicons.com/download/holidays-icons/christmas-icon-set-by-iconshock/png/256/christmas_star.png) no-repeat 0;
+    background: url(http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png) no-repeat 0;
     background-size: 11px 11px;
+}
+
+.movie-imdb-star {
+    background: url(http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/star-icon.png) no-repeat 0;
+    background-size: 11px 11px;
+    padding-right: 14px;
 }
 
 .movie-imdb b span {
@@ -120,3 +126,19 @@
 .movie-synopsis {
     padding-top: 15px;
 }
+
+.navigation {
+    display: block;
+    color: #ccc;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pagination.center,
+.pagination.center ul {
+    float: left;
+    position: relative;
+}
+.pagination.center { left: 50%; }
+.pagination.center ul { left: -50%; }

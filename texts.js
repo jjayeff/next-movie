@@ -7,7 +7,6 @@ export const EPISODE = 'หนังภาคต่อ';
 export const LATEST = 'หนังออกใหม่';
 export const THAI = 'หนังไทย';
 export const IMDB = 'IMDB';
-export const LIKEST = 'คนชอบมากที่สุด'
 
 //ประเภท
 export const TYPE = 'ประเภท';

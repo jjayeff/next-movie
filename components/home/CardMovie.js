@@ -4,7 +4,10 @@ import Link from 'next/link'
 class CardMovie extends React.Component {
     renderComponent(datas){
         return datas.map((data) =>
-            <div className='col-lg-3 col-md-6' key={data.id}>
+            <div 
+                className={(datas.length > 3)?'col-lg-3 col-md-6':(datas.length > 2)?'col-lg-4 col-md-6':(datas.length > 1)?'col-lg-6 col-md-6':'col-lg-12 col-md-6'} 
+                key={data._id
+            }>
                 <div className='card mb-3'>
                     <div className='movie'>
                         <Link href={{ pathname: `/movie`, query: data }} replace>
@@ -15,7 +18,7 @@ class CardMovie extends React.Component {
                                 <div className='movie-image'><img src={data.img}/></div>
                             </div>
                         </Link>
-                    <div className='movie-footer'>{data.footer}</div>
+                    <div className='movie-footer'>{data.sound} {data.quality} {data.year}</div>
                 </div>
                 </div>
             </div>

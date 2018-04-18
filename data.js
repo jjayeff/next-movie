@@ -1,54 +1,150 @@
-export const movie = [
+import {
+    CARTOON,
+    US,
+    ASIAN,
+    EPISODE,
+    LATEST,
+    IMDB,
+    TYPE,
+    ACTION,
+    ADVENTURE,
+    ANIMATION,
+    BIOGRAPHY,
+    COMEDY,
+    CRIME,
+    DOCUMENTARY,
+    DRAMA,
+    FAMILY,
+    FANTASY,
+    FILM_NOIR,
+    HISTORY,
+    HORROR,
+    MUSICAL,
+    MYSTERY,
+    ROMANCE,
+    SCI_FI,
+    SPORT,
+    THRILLER,
+    WAR,
+    WESTRN,
+    NONE_TYPE,
+    GROUP,
+    THAI
+  } from './texts'
+
+export const navbarUser = [
     {
-        id:0,
-        name: 'The Star คืนมหัศจรรย์แห่งดวงดาว',
-        imdb: '5.8',
-        img: 'https://www.movie2free.com/wp-content/uploads/2018/03/okok-11.jpg',
-        quality: 'HD',
-        footer: 'Thai+Soundtrack(T) HD 2017',
-        trailer: 'https://www.youtube.com/embed/jn_EItr5xUo',
-        synopsis: 'A Bad Moms Christmas คุณแม่ตัวพีคเดินหน้ากลับมากันครบทีม ไม่ว่าจะเป็น เอมี่ (มิลา คูนิส) กิกี้ (คริสเทน เบล) และ คาร์ล่า (แคธรี ฮาห์น) แต่เรื่องราวความวายป่วงของครั้งนี้จะดับเบิ้ลคูณสองขึ้นเมื่อพวกเธอต้องรับมือคิดหากลยุทธ์เหนือชั้นเพื่อต่อกรกับเหล่าคุณแม่ของตัวเองนำโดยสามนักแสดงหญิงมือเก๋าอย่าง คริสติน บาแรนสกี้ จาก Into the Woods (อิน ทู เดอะ วูดส์), เชอรีล ไฮเนส จาก The Ugly Truth (ดิ อักลี ทรูธ) และ ซูซาน ซาแรนดอน จาก The Lovely Bones (เดอะ เลิฟลี่ โบนส์) ที่ได้เดินทางมาเยี่ยมพวกเธอในช่วงคริสต์มาสพร้อมกับต้องการจะจัดงานปาร์ตี้ฉลองเทศกาลให้ได้มันส์สุดเหวี่ยงกันไปข้างหนึ่ง!',
+        name: LATEST,
+        link: '/'
     },
     {
-        id:1,
-        name: 'Pokemon the Movie I Choose You! โปเกมอน เดอะ มูฟวี ฉันเลือกนาย!',
-        imdb: '6.5',
-        img: 'https://www.movie2free.com/wp-content/uploads/2018/03/okok-10-213x300.jpg',
-        quality: 'HD',
-        footer: 'Thai(C) HD 2017',
-        trailer: 'https://www.youtube.com/embed/r12w4iRBLp4',
-        synopsis: 'A Bad Moms Christmas คุณแม่ตัวพีคเดินหน้ากลับมากันครบทีม ไม่ว่าจะเป็น เอมี่ (มิลา คูนิส) กิกี้ (คริสเทน เบล) และ คาร์ล่า (แคธรี ฮาห์น) แต่เรื่องราวความวายป่วงของครั้งนี้จะดับเบิ้ลคูณสองขึ้นเมื่อพวกเธอต้องรับมือคิดหากลยุทธ์เหนือชั้นเพื่อต่อกรกับเหล่าคุณแม่ของตัวเองนำโดยสามนักแสดงหญิงมือเก๋าอย่าง คริสติน บาแรนสกี้ จาก Into the Woods (อิน ทู เดอะ วูดส์), เชอรีล ไฮเนส จาก The Ugly Truth (ดิ อักลี ทรูธ) และ ซูซาน ซาแรนดอน จาก The Lovely Bones (เดอะ เลิฟลี่ โบนส์) ที่ได้เดินทางมาเยี่ยมพวกเธอในช่วงคริสต์มาสพร้อมกับต้องการจะจัดงานปาร์ตี้ฉลองเทศกาลให้ได้มันส์สุดเหวี่ยงกันไปข้างหนึ่ง!',
+        name: ASIAN,
+        link: '/'
     },
     {
-        id:2,
-        name: 'Star Wars Episode VIII – The Last Jedi สตาร์ วอร์ส ปัจฉิมบทแห่งเจได',
-        imdb: '7.9',
-        img: 'https://www.movie2free.com/wp-content/uploads/2017/12/Sword-Art-Online-The-Movie-Ordinal-Scale-2017-203x300.jpeg',
-        quality: 'HD',
-        footer: 'Thai+Soundtrack(T) HD 2017',
-        trailer: 'https://www.youtube.com/embed/Gn0WzX3OcAU',
-        synopsis: 'A Bad Moms Christmas คุณแม่ตัวพีคเดินหน้ากลับมากันครบทีม ไม่ว่าจะเป็น เอมี่ (มิลา คูนิส) กิกี้ (คริสเทน เบล) และ คาร์ล่า (แคธรี ฮาห์น) แต่เรื่องราวความวายป่วงของครั้งนี้จะดับเบิ้ลคูณสองขึ้นเมื่อพวกเธอต้องรับมือคิดหากลยุทธ์เหนือชั้นเพื่อต่อกรกับเหล่าคุณแม่ของตัวเองนำโดยสามนักแสดงหญิงมือเก๋าอย่าง คริสติน บาแรนสกี้ จาก Into the Woods (อิน ทู เดอะ วูดส์), เชอรีล ไฮเนส จาก The Ugly Truth (ดิ อักลี ทรูธ) และ ซูซาน ซาแรนดอน จาก The Lovely Bones (เดอะ เลิฟลี่ โบนส์) ที่ได้เดินทางมาเยี่ยมพวกเธอในช่วงคริสต์มาสพร้อมกับต้องการจะจัดงานปาร์ตี้ฉลองเทศกาลให้ได้มันส์สุดเหวี่ยงกันไปข้างหนึ่ง!',
+        name: US,
+        link: '/'
     },
     {
-        id:3,
-        name: 'A Bad Moms Christmas คริสต์มาสป่วนแก๊งแม่ชวนคึก',
-        imdb: '5.5',
-        img: 'https://www.movie2free.com/wp-content/uploads/2018/03/okok-14-209x300.jpg',
-        quality: 'HD',
-        footer: 'Thai+Soundtrack(T) HD 2017',
-        trailer: 'https://www.youtube.com/embed/FJdNdMOblaM',
-        synopsis: 'A Bad Moms Christmas คุณแม่ตัวพีคเดินหน้ากลับมากันครบทีม ไม่ว่าจะเป็น เอมี่ (มิลา คูนิส) กิกี้ (คริสเทน เบล) และ คาร์ล่า (แคธรี ฮาห์น) แต่เรื่องราวความวายป่วงของครั้งนี้จะดับเบิ้ลคูณสองขึ้นเมื่อพวกเธอต้องรับมือคิดหากลยุทธ์เหนือชั้นเพื่อต่อกรกับเหล่าคุณแม่ของตัวเองนำโดยสามนักแสดงหญิงมือเก๋าอย่าง คริสติน บาแรนสกี้ จาก Into the Woods (อิน ทู เดอะ วูดส์), เชอรีล ไฮเนส จาก The Ugly Truth (ดิ อักลี ทรูธ) และ ซูซาน ซาแรนดอน จาก The Lovely Bones (เดอะ เลิฟลี่ โบนส์) ที่ได้เดินทางมาเยี่ยมพวกเธอในช่วงคริสต์มาสพร้อมกับต้องการจะจัดงานปาร์ตี้ฉลองเทศกาลให้ได้มันส์สุดเหวี่ยงกันไปข้างหนึ่ง!',
+        name: EPISODE,
+        link: '/'
     },
     {
-        id:4,
-        name: 'Kodomo tsukai จับเด็กไปเป็นผี',
-        imdb: '4.6',
-        img: 'https://www.movie2free.com/wp-content/uploads/2018/03/okok-12-214x300.jpg',
-        quality: 'HD',
-        footer: 'Thai(C) HD 2017',
-        trailer: 'https://www.youtube.com/embed/Qy7Umd5Johw',
-        synopsis: 'A Bad Moms Christmas คุณแม่ตัวพีคเดินหน้ากลับมากันครบทีม ไม่ว่าจะเป็น เอมี่ (มิลา คูนิส) กิกี้ (คริสเทน เบล) และ คาร์ล่า (แคธรี ฮาห์น) แต่เรื่องราวความวายป่วงของครั้งนี้จะดับเบิ้ลคูณสองขึ้นเมื่อพวกเธอต้องรับมือคิดหากลยุทธ์เหนือชั้นเพื่อต่อกรกับเหล่าคุณแม่ของตัวเองนำโดยสามนักแสดงหญิงมือเก๋าอย่าง คริสติน บาแรนสกี้ จาก Into the Woods (อิน ทู เดอะ วูดส์), เชอรีล ไฮเนส จาก The Ugly Truth (ดิ อักลี ทรูธ) และ ซูซาน ซาแรนดอน จาก The Lovely Bones (เดอะ เลิฟลี่ โบนส์) ที่ได้เดินทางมาเยี่ยมพวกเธอในช่วงคริสต์มาสพร้อมกับต้องการจะจัดงานปาร์ตี้ฉลองเทศกาลให้ได้มันส์สุดเหวี่ยงกันไปข้างหนึ่ง!',
+        name: CARTOON,
+        link: '/'
     },
-    
-    
+    {
+        name: IMDB,
+        link: '/'
+    }
+] 
+
+export const navbarAdmin = [
+    {
+        name: 'ข้อมูลหนังทั้งหมด',
+        link: '/admin/info'
+    },
+    {
+        name: 'เพิ่มหนัง',
+        link: '/admin/add'
+    }
+]
+
+export const types = [
+    ACTION,
+    ADVENTURE,
+    ANIMATION,
+    BIOGRAPHY,
+    COMEDY,
+    CRIME,
+    DOCUMENTARY,
+    DRAMA,
+    FAMILY,
+    FANTASY,
+    FILM_NOIR,
+    HISTORY,
+    HORROR,
+    MUSICAL,
+    MYSTERY,
+    ROMANCE,
+    SCI_FI,
+    SPORT,
+    THRILLER,
+    WAR,
+    WESTRN,
+    NONE_TYPE
+]
+
+export const groups = [CARTOON,US,ASIAN,EPISODE,LATEST,THAI]
+
+export const years = [
+    2018,
+    2017,
+    2016,
+    2015,
+    2014,
+    2013,
+    2012,
+    2011,
+    2010,
+    2009,
+    2008,
+    2007,
+    2006,
+    2005,
+    2004,
+    2003,
+    2002,
+    2001,
+    2000,
+    1999,
+    1998,
+    1997,
+    1996,
+    1995,
+    1994,
+    1993,
+    1992,
+    1991,
+    1990,
+    1899,
+    1898,
+    1897,
+    1896,
+    1895,
+    1894,
+    1893,
+    1892,
+    1891,
+    1890,
+    1799,
+    1798,
+    1797,
+    1796,
+    1795,
+    1794,
+    1793,
+    1792,
+    1791,
+    1790,
 ]

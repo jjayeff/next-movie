@@ -1,14 +1,37 @@
 import React from 'react'
-import Link from 'next/link'
+import Router from 'next/router'
+import {
+    GROUP,
+    CARTOON,
+    US,
+    ASIAN,
+    EPISODE,
+    LATEST,
+    THAI,
+    IMDB
+} from '../texts'
 
 class CardList extends React.Component {
-    renderComponent(groups){
+    hendleClick(group) {
+        if(group == GROUP || group == CARTOON || group == US || group == ASIAN || group == EPISODE || group == LATEST || group == THAI || group == IMDB ) {
+            this.props.sreachGroupMovie(group)
+            Router.push({
+                pathname: '/sreach/group',
+                query: { group: group }
+            })
+        } else {
+            this.props.sreachTypeMovie(group)
+            Router.push({
+                pathname: '/sreach/type',
+                query: { type: group }
+            })
+        }
+    }
+    renderComponent(groups) {
         return groups.map((group,i) =>
-          <Link href='/' key={i}>
-            <li className='list-group-item'><b><a className='text-success' style={{cursor: 'pointer'}}>{group}</a></b></li>
-          </Link>
+            <li className='list-group-item' key={i}><b><a className='text-success' style={{cursor: 'pointer'}}  onClick={this.hendleClick.bind(this, group)}>{group}</a></b></li> 
         )
-      }
+    }
     render(){
         return (
             <div className='bs-component'>

@@ -1,18 +1,9 @@
 import CardList from './CardList'
-import {
-    GROUP,
-    CARTOON,
-    US,
-    ASIAN,
-    EPISODE,
-    LATEST,
-    THAI,
-} from '../texts'
+import { groups } from '../data'
+import { GROUP } from '../texts' 
 
-const groups = [CARTOON,US,ASIAN,EPISODE,LATEST,THAI]
-
-const Group = () => (
-    <CardList data={groups} head={GROUP} />
+const Group = (props) => (
+    <CardList data={groups} head={GROUP} sreachGroupMovie={props.data}/>
 )
 
 export default Group
